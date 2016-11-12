@@ -1,0 +1,417 @@
+body {
+	background: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family: Georgia-serif, Times New Roman;
+	font-size: 18px;
+
+}
+
+h1 {
+	font-family: "Gill Sans";
+	color: #ACACAC;
+	font-size: 60px;
+	text-align: center;
+}
+
+span.span-h1 {
+	font-family: "Gill Sans";
+	color: #F46359;
+	font-size: 60px;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Gill Sans";
+	color: #ACACAC;
+	font-size: 45px;
+	text-align: center;
+}
+
+h2.h2-contact {
+	font-family: "Gill Sans";
+	color: #ACACAC;
+	font-size: 45px;
+	text-align: center;
+}
+
+span.span-h2 {
+	font-family: "Gill Sans";
+	font-size: 45px;
+	color: #F46359;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Gill Sans";
+	font-size: 14px;
+	color: #F46359;
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-family: Georgia-serif;
+	text-align: center;
+	font-style: italic;
+}
+
+a:link {
+	text-decoration: none;
+	color: #ACACAC;
+}
+
+a:hover {
+	color: #F46359;
+}
+
+a:visited {
+	color: #ACACAC;
+}
+
+/* Structure */
+
+.main {
+	height: 100%;
+	border: 1px solid transparent;
+}
+
+.main section .content-wrapper {
+/*	border: 1px solid;*/
+	height: auto;
+	width: 70%;
+	margin-top: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+.main section#splash .content-wrapper-splash {
+/*	border: 1px solid;*/
+	height: 600px;
+	width: 70%;
+	margin-top: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+.main section#splash .container-splash {
+	height: 100%;
+	width: 100%;
+	background-color: #ffffff;
+	margin-top: 0px;
+/*	background-image: url('greyzz.png');*/
+	display: inline-block;
+}
+
+.main section .container {
+	height: auto;
+	width: 100%;
+	background-color: #ffffff;
+	display: inline-block;
+}
+
+/* Header */
+
+#transparency {
+	height: 130px;
+	width: 100%;
+	position: absolute;
+	background-color: #ffffff;
+	opacity: 0.9;
+	z-index: -1;
+}
+
+#navigation {
+	height: 130px;
+	width: 100%;
+	position: fixed;
+	z-index: 0;
+	box-shadow: 0px 1px 5px #F46359;
+}
+
+nav ul.menu-left {
+/*	width: 400px;*/
+	float: left;
+	margin-left: 12%;
+	margin-top: 50px;
+	z-index: 1;
+
+}
+
+nav ul.menu-right {
+/*	width: 400px;*/
+	float: right;
+	margin-right: 12%;
+	margin-top: 50px;
+	z-index: 1;
+}
+
+nav #logo {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	background-image: url('squareface.jpg');
+	background-size: cover;
+	border-radius: 138px;
+	z-index: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+nav ul.menu-right li {
+	margin-left: 46px;
+	display: inline-block;
+}
+
+nav ul li a {
+	font-size: 40px;
+	font-family: "Gill Sans";
+}
+
+/* Sticky Header */
+
+#navigation.sticky {
+	height: 80px;
+	width: 100%;
+	transition: all 0.4s ease;
+}
+
+#navigation.sticky #transparency{
+	height: 80px;
+	width: 100%;
+	transition: all 0.4s ease;
+}
+
+#navigation.sticky ul {
+	margin-top: 20px;
+	padding-left: 0px;
+	transition: all 0.4s ease;
+}
+
+#navigation.sticky ul.menu-left {
+	margin-left: 20%;
+	transition: all 0.4s ease;
+}
+
+#navigation.sticky ul li a {
+	font-size: 30px;
+	font-family: "Gill Sans";
+	transition: all 0.4s ease;
+}
+
+#navigation.sticky #logo {
+	height: 100px;
+	width: 100px;
+	transition: all 0.4s ease;
+}
+
+
+/* Portfolio */
+
+.main section#portfolio #thumbnails {
+/*	border: 1px solid black;*/
+	height: 100%;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.main section#portfolio #thumbnails #thumb-blog {
+/*	border: 1px solid yellow;*/
+	width: 400px;
+	display: inline-block;
+	float: left;
+	border-bottom: 1px solid #ACACAC;
+}
+
+.main section#portfolio #thumbnails #thumb-alex {
+/*	border: 1px solid yellow;*/
+	width: 400px;
+	display: inline-block;
+	float: right;
+	border-bottom: 1px solid #ACACAC;
+}
+
+.main section#portfolio #thumbnails #thumb-para {
+/*	border: 1px solid yellow;*/
+	width: 400px;
+	display: inline-block;
+	border-bottom: 1px solid #ACACAC;
+	margin-top: 20px;
+}
+
+.main section#portfolio #thumbnails img {
+	border-bottom: 1px solid #ACACAC;
+	height: 265px;
+	width: 400px;
+}
+
+/* Contact */
+
+.main section#contact ul#social-icons {
+	list-style: none;
+	height: 100px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 8%;
+	vertical-align: middle;
+}
+
+.main section#contact ul#social-icons li {
+	display: inline-block;
+	margin-right: 30px;
+	margin-top: 10px;
+}
+
+/* Footer */
+
+footer {
+	height: 50px;
+	margin-top: 50px;
+}
+
+/* Media */
+
+@media (max-width: 1350px) {
+	.main section#portfolio #thumbnails {
+		height: auto;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	.main section#portfolio #thumbnails #thumb-alex {
+		margin-top: 40px;
+		float: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	nav ul li a {
+		font-size: 30px;
+	}
+
+	nav ul.menu-right {
+		margin-right: 6%;
+	}
+
+	#navigation.sticky ul li a {
+		font-size: 20px;
+		font-family: "Gill Sans";
+		transition: all 0.4s ease;
+	}
+
+	#navigation.sticky #logo {
+		height: 70px;
+		width: 70px;
+		transition: all 0.4s ease;
+	}
+}
+
+@media (max-width: 1000px) {
+	nav ul li a {
+		font-size: 25px;
+	}
+	nav ul.menu-left {
+		margin-left: 8%;
+	}
+	#navigation.sticky ul.menu-left {
+		margin-left: 8%;
+	}
+	.main section#portfolio #thumbnails {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	.main section#contact ul#social-icons {
+		margin-bottom: 15%;
+	}
+}
+
+@media (max-width: 850px) {
+	nav ul li a {
+		font-size: 20px;
+	}
+
+	nav #logo {
+		height: 100px;
+		width: 100px;
+	}
+	.main section#contact ul#social-icons {
+		margin-left: 7%;
+	}
+	h2.h2-contact {
+		font-size: 35px;
+	}
+}
+
+
+@media (max-width: 700px) {
+	nav #logo {
+		height: 200px;
+		width: 200px;
+	}
+	nav ul.menu-left {
+		display: none;
+	}
+	nav ul.menu-right {
+		display: none;
+	}
+	.main section .content-wrapper {
+		margin-top: 100px;
+		display: inline-block;
+		margin-left: 13%;
+		margin-right: auto;
+		width: 70%;
+	}
+	.main section#portfolio .container {
+		margin-top: 50px;
+	}
+	.main section#contact .container {
+		margin-top: 50px;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	span.span-h2 {
+		font-size: 35px;
+	}
+	h2.h2-contact {
+		font-size: 30px;
+		padding-top: 55px;
+	}
+	.main section#portfolio #thumbnails {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.main section#contact ul#social-icons {
+		margin-bottom: 55%;
+	}
+}
+
+@media (max-width: 550px) {
+	.main section#portfolio #thumbnails img {
+		height: 165px;
+		width: 300px;
+	}
+	.main section#portfolio #thumbnails #thumb-blog {
+		width: 300px;
+	}
+	.main section#portfolio #thumbnails #thumb-alex {
+		width: 300px;
+	}
+	.main section#portfolio #thumbnails #thumb-para {
+		width: 300px;
+	}
+}
+
+
+
